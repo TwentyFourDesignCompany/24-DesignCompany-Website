@@ -10,6 +10,12 @@
   background-color: #0c1737;
   color: #fff;
 }
+.single-service-btn{
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  
+}
 
 @media screen and (max-width: 500px) {
   .single-service {

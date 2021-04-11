@@ -53,6 +53,16 @@
 .single-phil:hover .single-team-img {
   transform: rotate(360deg) !important;
 }
+.abs-img{
+  z-index: -100;
+  opacity: .4;
+}
+
+@media screen and (min-width:1400px){
+  .abs-img{
+    left: 20%;
+  }
+}
 
 @media screen and (max-width: 450px) {
   .about-wrapper {

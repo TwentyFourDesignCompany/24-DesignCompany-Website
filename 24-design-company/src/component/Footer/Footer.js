@@ -43,7 +43,7 @@ const Footer = () => {
       {/* single footer */}
       <div className="single-footer min-w-full mb-5">
         <div className=" footer-divider lg:w-2/5 w-full invisible lg:visible bg-primary-light"></div>
-        <div className="mx-5 lg:mb-0 mb-10">
+        <div className="mx-auto lg:mb-0 mb-10 ">
           <img src={Image} alt="24 Design Logo" />
         </div>
         <div className="lg:w-2/5 w-full">

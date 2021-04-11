@@ -19,15 +19,8 @@ const AboutPage = () => {
       className="container main-home-container relative"
     >
       <section className=" container  min-w-full pt-20  lg:pb-10 pb-10  lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12 pr-6">
-        <div className="w-full h-full about-wrapper relative lg:pt-32 md:pt-24 pt-24">
-          <div className="absolute lg:visible invisible">
-            <img
-              src={AbosoluteAbout}
-              alt="24 Design Company"
-              className="block"
-            />
-          </div>
-          <div className="about-text-cont w-full h-full lg:mt-60 mt-96">
+        <div className="w-full h-full about-wrapper  lg:pt-32 md:pt-24 pt-24">
+          <div className="about-text-cont w-full relative h-full lg:mt-60 mt-96">
             <h6 className="font-bold tracking-wide sm:text-6xl text-5xl text-primary-main lg:mb-1">
               About 24
             </h6>
@@ -35,6 +28,13 @@ const AboutPage = () => {
             <h6 className="font-bold sm:text-4xl text-2xl text-primary-main">
               design company
             </h6>
+            <div className="absolute abs-img lg:visible invisible bottom-0  lg:left-1/4 z-0">
+              <img
+                src={AbosoluteAbout}
+                alt="24 Design Company"
+                className="block"
+              />
+            </div>
           </div>
         </div>
       </section>

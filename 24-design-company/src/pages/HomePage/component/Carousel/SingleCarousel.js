@@ -4,8 +4,8 @@ import Image from "../../../../assets/images/caro4.png";
 
 const SingleCarousel = (props) => {
   return (
-    <div className="mx-auto">
-      <img src={props.image} alt="24 Design" />
+    <div className="mx-5">
+      <img src={props.image} alt="24 Design" className="block " />
     </div>
   );
 };

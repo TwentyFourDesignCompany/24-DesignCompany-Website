@@ -200,7 +200,7 @@ const HomePage = () => {
       </section>
       {/* PHONE VIEW */}
       <section className="container phone-view min-w-full pt-4 mt-0 pb:10  lg:pb-28 lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12  pr-6">
-        <div className=" phone-text-cont xl:mx-auto   xl:pl-48 xl:pt-5 lg:pl-10 lg:pt-14 md:pl-14 pt-24 md:pt-8 pl-10 ">
+        <div className=" phone-text-cont xl:mx-auto   xl:pl-48 xl:pt-5 lg:pl-10 lg:pt-48 md:pl-14 pt-24 md:pt-24 pl-10 ">
           <h6 className="font-bold phone-big-text text-primary-main  xl:text-7xl text-left md:mb-3 lg:text-7xl md:text-6xl text-2xl">
             Interested in
           </h6>

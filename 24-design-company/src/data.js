@@ -1,10 +1,10 @@
 import Image from "./assets/images/service1.png";
 import Image2 from "./assets/images/service2.png";
 import Image3 from "./assets/images/service3.png";
-import caro from "./assets/images/caro1.png";
-import caro2 from "./assets/images/caro2.png";
-import caro3 from "./assets/images/caro3.png";
-import caro4 from "./assets/images/caro4.png";
+import caro from "./assets/images/bluechip-light-1.png";
+import caro2 from "./assets/images/sebas.jpg";
+import caro3 from "./assets/images/24careline.400b5d32.png";
+import caro4 from "./assets/images/bluechip.gif";
 import caro5 from "./assets/images/caro5.png";
 import pro1 from "./assets/images//product1.png";
 import pro2 from "./assets/images//product2.png";
@@ -28,10 +28,11 @@ import career5 from "./assets/images/career5.png";
 export const services = [
   {
     id: 1,
-    title: "Prdouct Devlopment",
+    title: "Product Devlopment",
     details:
       "End-to-End Product Development Services To Help You Stay Competitive in the Market",
     image: Image,
+    link: "/project-development",
   },
   {
     id: 2,
@@ -39,6 +40,7 @@ export const services = [
     details:
       "Custom web applications designed to meet specific business challenges",
     image: Image2,
+    link: "/web-development",
   },
   {
     id: 3,
@@ -46,6 +48,7 @@ export const services = [
     details:
       "Robust Mobile Applications For Improved Client And Workforce Engagement",
     image: Image3,
+    link: "/mobile-development",
   },
 ];
 
@@ -60,7 +63,7 @@ export const carouselSettings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
         dots: true,
@@ -69,7 +72,7 @@ export const carouselSettings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 2,
         initialSlide: 2,
       },
