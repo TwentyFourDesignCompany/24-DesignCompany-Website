@@ -1,0 +1,26 @@
+.single-service {
+  background-color: #fff !important;
+  height: 22rem !important;
+}
+.single-service:hover {
+  background-color: #faaf40 !important;
+  transform: scale(1.1);
+}
+.single-service:hover .service-btn {
+  background-color: #0c1737;
+  color: #fff;
+}
+.single-service-btn{
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .single-service {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    height: 20rem !important;
+  }
+}
