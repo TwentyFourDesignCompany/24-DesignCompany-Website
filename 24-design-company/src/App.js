@@ -27,25 +27,16 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={HomePage} />
-          <Route path="/about" exact component={AboutPage} />
-          <Route
-            path="/project-development"
-            exact
-            component={ProjectDevelopment}
-          />
-          <Route path="/web-development" exact component={WebDevPage} />
-          <Route path="/careers" exact component={CareersPage} />
-          <Route path="/blog" exact component={BlogPage} />
-          <Route
-            path="/mobile-development"
-            exact
-            component={MobileDevelopment}
-          />
-          <Route path="/ui-development" exact component={UIDevelopment} />
-          <Route path="/QA-testing" exact component={QAPage} />
+          <Route  path="/about" component={AboutPage} />
+          <Route path="/project-development" component={ProjectDevelopment} />
+          <Route path="/web-development" component={WebDevPage} />
+          <Route path="/careers" component={CareersPage} />
+          <Route path="/blog" component={BlogPage} />
+          <Route path="/mobile-development" component={MobileDevelopment} />
+          <Route path="/ui-development" component={UIDevelopment} />
+          <Route path="/QA-testing" component={QAPage} />
           <Route
             path="/digital-transformation"
-            exact
             component={DigitalTransformation}
           />
         </Switch>

@@ -97,17 +97,17 @@
 }
 .bulb-img-cont {
   height: 19rem !important;
-  width: 50%;
+  width: 80%;
 }
 .sub-main-cont-text {
   color: #0c1737;
-  font-size: 43px;
+  font-size: 38px;
 }
 .sub-main-cont-text1 {
   color: #0c1737;
-  font-size: 23px;
+  font-size: 20px;
   width: 90%;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 /* HOEVER VIEW */
@@ -132,6 +132,9 @@
   flex-direction: row;
   justify-content: center !important;
   align-items: center !important;
+}
+.passion-btn:focus{
+  outline: none !important;
 }
 .clients-view {
   background-color: #f4f6ff;
@@ -176,11 +179,16 @@
 margin-left: -2rem;
 } */
   .sub-main-cont-text {
-    font-size: 38px;
+    font-size: 28px;
   }
-  /* .sub-main-cont-text1 {
-    font-size: 20px;
-  } */
+  .sub-main-cont-text1 {
+    font-size: 17px;
+    width:95%
+  }
+  .bulb-img-cont {
+  height: 19rem !important;
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 960px) {
@@ -192,10 +200,10 @@ margin-left: -2rem;
   .sub-main-text3 {
     width: 80%;
   }
-  /* .sub-main-cont-text {
+  .sub-main-cont-text {
     color: #0c1737;
-    font-size: 35px;
-  } */
+    font-size: 32px;
+  }
   .bulb-img-cont {
     width: 0%;
   }
@@ -225,10 +233,10 @@ margin-left: -2rem;
     padding-top: 3rem;
   }
   .sub-main-cont-text {
-    font-size: 24px;
+    font-size: 18px !important;
   }
   .sub-main-cont-text1 {
-    font-size: 18px;
+    font-size: 13px !important;
     width: 100%;
     margin-top: 15px;
   }
@@ -244,10 +252,10 @@ margin-left: -2rem;
     padding-top: 3rem;
   }
   .sub-main-cont-text {
-    font-size: 21px;
+    font-size: 15px !important;
   }
   .sub-main-cont-text1 {
-    font-size: 15px;
+    font-size: 11px !important;
     width: 100%;
     margin-top: 15px;
   }
@@ -279,10 +287,10 @@ margin-left: -2rem;
     width: 90%;
   }
   .sub-main-cont-text {
-    font-size: 16px;
+    font-size: 12px !important;
   }
   .sub-main-cont-text1 {
-    font-size: 13px;
+    font-size: 10px !important;
     width: 100%;
     margin-top: 15px;
   }
@@ -296,13 +304,13 @@ margin-left: -2rem;
     font-size: 9px !important;
   }
   .phone-text-cont {
-    padding-top: 6.2rem !important;
+    padding-top:6.4rem !important;
     padding-left: 2rem !important;
   }
 }
 @media screen and (max-width: 330px) {
   .phone-big-text {
-    font-size: 25px !important;
+    font-size: 20px !important;
     margin-top: -5px !important;
   }
   .phone-text-cont {

@@ -5,7 +5,7 @@ import caro from "./assets/images/bluechip-light-1.png";
 import caro2 from "./assets/images/sebas.jpg";
 import caro3 from "./assets/images/24careline.400b5d32.png";
 import caro4 from "./assets/images/bluechip.gif";
-import caro5 from "./assets/images/caro5.png";
+import caro5 from "./assets/images/LeadPath Logo.png";
 import pro1 from "./assets/images//product1.png";
 import pro2 from "./assets/images//product2.png";
 import pro3 from "./assets/images//product3.png";
@@ -28,9 +28,9 @@ import career5 from "./assets/images/career5.png";
 export const services = [
   {
     id: 1,
-    title: "Product Devlopment",
+    title: "Product Development",
     details:
-      "End-to-End Product Development Services To Help You Stay Competitive in the Market",
+      "The team’s technical excellence takes you halfway to success. At 24 Design Company, we understand that a solid grasp of your business sector and excellent development approach is equally critical in our development process. Over the years, we have enriched and optimised our systems development lifecycle and software engineering skills to arrive at a predictable process that allows teams to minimize risks and costs.",
     image: Image,
     link: "/project-development",
   },
@@ -38,7 +38,7 @@ export const services = [
     id: 2,
     title: " Web Application Development",
     details:
-      "Custom web applications designed to meet specific business challenges",
+      "Our web applications are marked by a robust, scalable architecture that supports high performance requirements and ease of management without compromising security. 24 Design Company emphasises more on intuitive UX and polished UI designs to keep your visitors coming back",
     image: Image2,
     link: "/web-development",
   },
@@ -46,7 +46,7 @@ export const services = [
     id: 3,
     title: "Mobile Development",
     details:
-      "Robust Mobile Applications For Improved Client And Workforce Engagement",
+      "We develop powerful applications that provide a thrilling experience for your users and bring tangible value to your business. Whether native, hybrid or cross platform, our mobile development team delivers solutions that run seamlessly on all major operating systems and all major mobile devicest",
     image: Image3,
     link: "/mobile-development",
   },

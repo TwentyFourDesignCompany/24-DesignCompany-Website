@@ -51,14 +51,20 @@ const HomePage = () => {
             applications – and helping organizations create and sustain digital
             innovation.
           </h6>
-          <button className="home-btn sm:mb-5 animate-bounce">Get Started</button>
+          <button className="home-btn sm:mb-5 animate-bounce">
+            Get Started
+          </button>
           <div className="absolute invisible sm:visible lg:bottom-8 lg:right-10 md:right-0 bottom-3 md:bottom-4 flex">
             {/* SINGLE ICON */}
             <NavLink className="mr-14 single-icon animate-pulse" to="#">
               <FaFacebook className="home-icon" />
             </NavLink>
             {/* SINGLE ICON */}
-            <NavLink className="mr-14 single-icon animate-pulse" to="#">
+            <NavLink
+              className="mr-14 single-icon animate-pulse"
+              to="https://twitter.com/24DesignCompany"
+              target="_blank"
+            >
               <FaTwitter className="home-icon" />
             </NavLink>
             {/* SINGLE ICON */}
@@ -82,13 +88,12 @@ const HomePage = () => {
               className="bulb-img block w-full h-full"
             />
           </div>
-          <div className="lg:pt-12 sub-main-cont-1">
+          <div className="lg:pt-7 sub-main-cont-1">
             <h6 className="sub-main-cont-text font-bold">
-              We are a global IT company
+              Connecting Business and Technology
             </h6>
             <h6 className="sub-main-cont-text1 mb-10">
-              providing strategic IT business solutions and services for complex
-              business problem
+             We help you harness the cutting edge of tech to boost operational efficiencies, ensure faster time to value, and revolutionize customer care. Our service offering is built around helping you launch and sustain your digital transformation long-term.
             </h6>
 
             <Button width={200}>Know more</Button>
@@ -160,7 +165,7 @@ const HomePage = () => {
           </NavLink>
         </div>
         {/* SERVICES */}
-        <div className="container min-w-full grid lg:grid-cols-3 gap-5 pb-10">
+        <div className="container min-w-full grid lg:grid-cols-3 lg-gap-3 gap-5 pb-10">
           {/* SINGLE SERVICE */}
           {servicesView}
         </div>
@@ -200,7 +205,7 @@ const HomePage = () => {
       </section>
       {/* PHONE VIEW */}
       <section className="container phone-view min-w-full pt-4 mt-0 pb:10  lg:pb-28 lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12  pr-6">
-        <div className=" phone-text-cont xl:mx-auto   xl:pl-48 xl:pt-5 lg:pl-10 lg:pt-48 md:pl-14 pt-24 md:pt-24 pl-10 ">
+        <div className=" phone-text-cont xl:mx-auto   xl:pl-48 xl:pt-5 lg:pl-10 lg:pt-44 md:pl-14 pt-24 md:pt-24 pl-10 ">
           <h6 className="font-bold phone-big-text text-primary-main  xl:text-7xl text-left md:mb-3 lg:text-7xl md:text-6xl text-2xl">
             Interested in
           </h6>

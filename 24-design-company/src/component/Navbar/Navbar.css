@@ -17,7 +17,7 @@
 }
 .navbar-containers.bg-active {
   background-color: #0c1737 !important;
-  height: 80px;
+  height: 100px;
   padding-top: 10px;
 }
 
@@ -39,7 +39,7 @@
   text-decoration: none !important;
   display: block;
   margin-right: 15px;
- transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav-item:hover {
@@ -56,10 +56,10 @@
   text-decoration: none !important;
   padding: 0.5rem 1rem;
   height: 100%;
-   transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .nav-links-change {
-  color: #FAAF40 !important ;
+  color: #faaf40 !important ;
 }
 
 .fa-bars {
@@ -79,6 +79,7 @@
   opacity: 1;
   transform: translateY(0px) !important;
   right: -33vw;
+  overflow-y: scroll !important;
 }
 .nav-menu li.dropdown-cont .drop-menu {
   visibility: hidden;
@@ -93,9 +94,10 @@
   background-color: #fff;
 
   z-index: 111;
-  min-height: 50vh;
+  min-height: 60vh;
   transition: 0.4s all;
   min-width: 100vw !important;
+  
 }
 
 /* .dropdown-cont:hover .drop-menu{
@@ -143,6 +145,7 @@ min-height:50vh;
     padding-left: 7.5rem;
     top: -5vh !important;
     min-width: 100vw !important;
+    overflow-y: scroll !important;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -160,6 +163,9 @@ min-height:50vh;
   }
   .nav-menu li.dropdown-cont .drop-menu {
     padding-left: 80px;
+  }
+  .nav-menu{
+    overflow-y: scroll !important;
   }
   .sub-link-text {
     width: 95%;
@@ -194,16 +200,14 @@ min-height:50vh;
     top: -1vh !important;
     left: -40vw;
     min-width: 100vw !important;
-  transform: translateX(-1000px) !important;
-
+    transform: translateX(-1000px) !important;
   }
   .nav-menu li.dropdown-cont:hover .drop-menu {
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(0px) !important;
-  right: -33vw;
-}
-
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px) !important;
+    right: -33vw;
+  }
 
   .nav-menu.active {
     background: #0d0a52;
@@ -271,6 +275,17 @@ min-height:50vh;
   .single-nav {
     margin-bottom: 20px;
   }
+  .sub-link-text {
+    width: 60%;
+  }
+  .single-services-icon {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .single-services-icon {
+    width:100% !important;
+    height: 100% !important;
+  }
 }
 @media screen and (max-width: 580px) {
   .navbar-containers {
@@ -285,6 +300,10 @@ min-height:50vh;
   }
   .sub-link-text {
     width: 60%;
+  }
+   .single-services-icon {
+    width: 80px !important;
+    height: 20px !important;
   }
 }
 @media screen and (max-width: 380px) {

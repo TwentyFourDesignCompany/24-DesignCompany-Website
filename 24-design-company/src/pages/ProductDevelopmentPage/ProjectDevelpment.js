@@ -25,9 +25,14 @@ const ProjectDevelpment = () => {
             <h6 className="font-bold text-primary-main proj-main-text text-3xl mb-5">
               Product Development Service
             </h6>
-            <h6 className="font-light proj-sub-text  text-primary-main text-xl">
+            <h6 className="font-light proj-sub-text  text-primary-main text-lg">
               End-to-End Product Development Services to help you stay
-              competitive in the market
+              competitive in the market.The team’s technical excellence takes
+              you halfway to success. At 24 Design Company, we understand that a
+              solid grasp of your business sector and excellent development
+              approach is equally critical in our development process. We place
+              a very high value on transparency and extensive communication to
+              make sure the needs and expectations of every client is met 100%.
             </h6>
           </div>
 
@@ -85,11 +90,12 @@ const ProjectDevelpment = () => {
       <section className="container pro-sub-sec5 min-w-full pt-20  lg:pb-20 pb-20  lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12 pr-6 ">
         <div className="w-full h-full mx-auto">
           <h6 className="font-medium text-primary-main mb-5  md:text-3xl text-xl text-center">
-            Interested in discussing a project?
+            GOT AN IDEA OR A PROJECT?
           </h6>
 
-          <p className="text-primary-main md:text-3xl text-xl font-light text-center">
-            Let’s build something great
+          <p className="text-primary-main lg-2xl md:text-xl  text-xl font-light text-center">
+            Tell us about your business idea or challenges to start working on a
+            solution with top software development experts.
           </p>
           <button className="passion-btn mx-auto flex animate-bounce outline-none w-40 h-9  mt-14 border rounded-3xl border-primary-main bg-primary-main ">
             Get in touch
