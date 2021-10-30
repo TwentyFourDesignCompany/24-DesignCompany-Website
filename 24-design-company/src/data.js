@@ -24,6 +24,8 @@ import career2 from "./assets/images/career2.png";
 import career3 from "./assets/images/career3.png";
 import career4 from "./assets/images/career4.png";
 import career5 from "./assets/images/career5.png";
+import New from "./assets/images//img1.svg";
+import New1 from "./assets/images//img2.svg";
 
 export const services = [
   {
@@ -251,4 +253,44 @@ export const jobs = [
   { id: 3, title: "UI/UX Designer", level: "Junior" },
   { id: 4, title: "Mobile Dveloper", level: "Junior" },
   { id: 5, title: "Backend-Developer", level: "Senior" },
+];
+
+export const newHome = [
+  {
+    text1: "We are a global IT Company",
+    title: "Connecting Business and Technology",
+    text2:
+      "We help you harness the cutting edge of tech to boost operational efficiencies, ensure faster time to value, and revolutionize customer care. Our service offering is built around helping you launch and sustain your digital transformation long-term.",
+    showBtn: true,
+  },
+  {
+    text1: "",
+    title: "Our mission",
+    text2:
+      "Our mission is to enable progressive businesses and ideas to transform, scale and gain competitive advantage, through the expert delivery of innovative, tailor-made software solutions. Our solutions help organizations and people around the world to perform more effectively and achieve better outcomes.",
+    showBtn: false,
+  },
+];
+
+export const footerServices = [
+  {
+    title: "About",
+    link: "/about",
+  },
+  {
+    title: "Out Team",
+    link: "/team",
+  },
+  {
+    title: "Services",
+    link: "/services",
+  },
+  {
+    title: "Blog",
+    link: "/blog",
+  },
+  {
+    title: "Portfolio",
+    link: "/portfolio",
+  },
 ];

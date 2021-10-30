@@ -1,11 +1,12 @@
+import "aos/dist/aos.css";
 import React from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import "./App.css";
-
+import AOS from "aos";
 // COMPONENTS
 import Navbar from "./component/Navbar/Navbar";
-import Footer from "./component/Footer/Footer";
+import Footer from "./component/Footer/Footer2";
 
 // SCREENS
 import HomePage from "./pages/HomePage/HomePage";
@@ -20,6 +21,9 @@ import CareersPage from "./pages/CareersPage/CareersPage";
 import BlogPage from "./pages/BlogPage/BlogPage";
 
 function App() {
+  AOS.init({
+    easing: "ease-in-out",
+  });
   const location = useLocation();
   return (
     <>
@@ -27,7 +31,7 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={HomePage} />
-          <Route  path="/about" component={AboutPage} />
+          <Route path="/about" component={AboutPage} />
           <Route path="/project-development" component={ProjectDevelopment} />
           <Route path="/web-development" component={WebDevPage} />
           <Route path="/careers" component={CareersPage} />
