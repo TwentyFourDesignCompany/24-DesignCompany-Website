@@ -27,9 +27,9 @@ const Footer2 = () => {
               <p className="mt-5">Plot 1A, Road 3, Ikota Villa, Lekki Lagos</p>
               <a
                 className="hover:text-secondary block py-1"
-                href="tel:+234 345 678 903"
+                href="tel:+234 704 454 4455"
               >
-                +234 345 678 903
+                +234 704 454 4455
               </a>
               <a
                 className="hover:text-secondary"
@@ -40,6 +40,7 @@ const Footer2 = () => {
             </div>
 
             <div className="w-full sub-footer-cont col-span-2 grid md:grid md:grid-cols-3 lg:grid-cols-3 gap-14">
+           
               {/* 2nd */}
               <div className="footer-3 w-full h-full md:mt-0 mt-5">
                 <p className="footer-text text-base  font-SemiBold mb-5">
@@ -62,108 +63,32 @@ const Footer2 = () => {
                   </NavLink>
                 ))}
               </div>
-              {/* 2nd */}
-              <div className="footer-3 w-full h-full md:mt-0 mt-5">
-                <p className="footer-text text-base  font-SemiBold mb-5">
-                  Company
-                </p>
-                {footerServices.map((item, index) => (
-                  <NavLink
-                    key={index}
-                    to={item.link}
-                    exact
-                    className="single-footer-nav bg-transparent text-white-light mb-5 block"
-                    activeClassName="footer-active"
-                  >
-                    <p
-                      className="text-sm  font-SansRegular footer-single-nav-text"
-                      // onClick={scrollToTop}
-                    >
-                      {item.title}
-                    </p>
-                  </NavLink>
-                ))}
-              </div>
-              {/* 2nd */}
-              <div className="footer-3 w-full h-full md:mt-0 mt-5">
-                <p className="footer-text text-base  font-SemiBold mb-5">
-                  Resources
-                </p>
-                {footerServices.map((item, index) => (
-                  <NavLink
-                    key={index}
-                    to={item.link}
-                    exact
-                    className="single-footer-nav bg-transparent text-white-light mb-5 block"
-                    activeClassName="footer-active"
-                  >
-                    <p
-                      className="text-sm  font-SansRegular footer-single-nav-text"
-                      // onClick={scrollToTop}
-                    >
-                      {item.title}
-                    </p>
-                  </NavLink>
-                ))}
-              </div>
-            </div>
-            {/* <div className="col-span-2">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-5">
-                <div>
-                  <h3 className="font-semibold text-xl pb-3">Services</h3>
-                  <div className="flex flex-col gap-2">
-                    <Link to="/about" className="hover:text-secondary">
-                      About
-                    </Link>
-                    <Link to="/services" className="hover:text-secondary">
-                      Services
-                    </Link>
-                    <Link to="/blog" className="hover:text-secondary">
-                      Blog
-                    </Link>
-                    <Link to="/testPackage" className="hover:text-secondary">
-                      Test Packages
-                    </Link>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-xl pb-3">Company</h3>
-                  <div className="flex flex-col gap-2">
-                    <Link to="/about" className="hover:text-secondary">
-                      About
-                    </Link>
-                    <Link to="/services" className="hover:text-secondary">
-                      Services
-                    </Link>
-                    <Link to="/blog" className="hover:text-secondary">
-                      Blog
-                    </Link>
-                    <Link to="/testPackage" className="hover:text-secondary">
-                      Test Packages
-                    </Link>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-xl pb-4">Resources</h3>
-                  <div className="flex flex-col gap-2">
-                    <Link to="/about" className="hover:text-secondary">
-                      About
-                    </Link>
-                    <Link to="/services" className="hover:text-secondary">
-                      Services
-                    </Link>
-                    <Link to="/blog" className="hover:text-secondary">
-                      Blog
-                    </Link>
-                    <Link to="/testPackage" className="hover:text-secondary">
-                      Test Packages
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+              <div>
+              <h1 className="text-base font-SemiBold mb-5">Expertise</h1>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">Healthcare</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">Logistics</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">FinTech</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">Marketplace</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">Retail</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">Travel</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">Education</p>
 
-            {/* 3rd */}
+            </div>   
+            <div>
+              <h1 className="text-base font-SemiBold mb-5">Insights</h1>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">App development cost</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">How to build ridesharing</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">How to build a fitness app</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">Build a streaming app</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">CRM for Agriculture</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">How to build a CRM</p>
+              <p className="text-sm  font-SansRegular text-white-light mb-5">Web design process</p>
+
+            </div>       
+            </div>
+
+           
+            
             <div className="">
               <h3 className="font-semibold  text-xl pb-3 footer-text">
                 Subscribe
@@ -177,12 +102,14 @@ const Footer2 = () => {
                   required
                 />
                 <div className="footer-btn flex flex-row p-1 text-xs rounded-md">
-                  <button
-                    type="submit"
-                    className=" font-normal flex flex-row footer-main-btn rounded-md transition ease-in-out duration-500 outline-none focus:outline-none"
-                  >
-                    Get Started
-                  </button>
+                  <Link to={"/contact"}>
+                    <button
+                      type="submit"
+                      className=" font-normal flex flex-row footer-main-btn rounded-md transition ease-in-out duration-500 outline-none focus:outline-none"
+                    >
+                      Get Started
+                    </button>
+                  </Link>
                 </div>
               </form>
               <div className="footer-social-cont flex flex-row mt-10">
@@ -225,14 +152,13 @@ const Footer2 = () => {
       >
         <div className="myContainer flex flex-col lg:flex-row justify-between">
           <div className="flex mb-3 lg:mb-0">
-            <span className="text-xs sm:text-sm">Terms of Services</span>
+            <Link to='/terms'><span className="text-xs sm:text-sm">Terms of Services</span></Link>
             <div className="border-r-2 border-white mx-4" />
-            <span className="text-xs sm:text-sm">Privacy Policy</span>
+            <Link to='/privacy'><span className="text-xs sm:text-sm">Privacy Policy</span></Link>
           </div>
           <div>
             <p className="text-xs sm:text-sm mt-2">
-              &copy; <span>{year}.</span> 24 Discovery Medical. All Rights
-              Reserved
+              &copy; <span>{year}.</span>24 Design Company. All Rights Reserved.
             </p>
           </div>
         </div>

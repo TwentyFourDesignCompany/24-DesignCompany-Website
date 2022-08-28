@@ -88,15 +88,15 @@
   /* padding: 3rem 0rem 3rem 7.5rem; */
   top: -6vh !important;
   transform: translateY(50px) !important;
+
   left: -59vw !important;
   padding-top: 3rem;
-  padding-left: 7.5rem;
+  padding-left: 3rem;
   background-color: #fff;
-
-  z-index: 111;
+  z-index: 111 ;
   min-height: 60vh;
   transition: 0.4s all;
-  min-width: 100vw !important;
+  min-width: 80vw !important;
 }
 
 /* .dropdown-cont:hover .drop-menu{
@@ -117,6 +117,17 @@ min-height:50vh;
 } */
 .active {
   color: #00a7ff !important;
+}
+
+.contact {
+  background-color: #2F58FF;
+ padding: 10px 20px;
+ border-radius: 8px;
+}
+
+.contactBtn:hover {
+  color: white !important;
+  border-bottom: none;
 }
 
 @media screen and (min-width: 2500px) {

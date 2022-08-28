@@ -1,11 +1,10 @@
 import Image from "./assets/images/service1.png";
 import Image2 from "./assets/images/service2.png";
 import Image3 from "./assets/images/service3.png";
-import caro from "./assets/images/bluechip-light-1.png";
-import caro2 from "./assets/images/sebas.jpg";
-import caro3 from "./assets/images/24careline.400b5d32.png";
-import caro4 from "./assets/images/bluechip.gif";
-import caro5 from "./assets/images/LeadPath Logo.png";
+import caro from "./assets/images/image1.png";
+import caro2 from "./assets/images/design1.png";
+import caro3 from "./assets/images/bpm.png";
+
 import pro1 from "./assets/images//product1.png";
 import pro2 from "./assets/images//product2.png";
 import pro3 from "./assets/images//product3.png";
@@ -58,7 +57,7 @@ export const carouselSettings = {
   dots: false,
   infinite: true,
   speed: 5000,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
   responsive: [
@@ -101,15 +100,7 @@ export const carouselData = [
   {
     id: 3,
     image: caro3,
-  },
-  {
-    id: 4,
-    image: caro4,
-  },
-  {
-    id: 5,
-    image: caro5,
-  },
+  }
 ];
 
 export const productData = [
@@ -274,23 +265,28 @@ export const newHome = [
 
 export const footerServices = [
   {
-    title: "About",
+    title: "Product Development Service",
     link: "/about",
   },
   {
-    title: "Out Team",
-    link: "/team",
+    title: "Web Application Development",
+    link: "/about",
   },
   {
-    title: "Services",
-    link: "/services",
+    title: "Mobile Development Service",
+    link: "/about",
   },
   {
-    title: "Blog",
-    link: "/blog",
+    title: "UI/UX",
+    link: "/about",
   },
   {
-    title: "Portfolio",
-    link: "/portfolio",
+    title: "Digital Transformation",
+    link: "/about",
+  },
+  {
+    title: "QA & Testing",
+    link: "/about",
   },
 ];
+

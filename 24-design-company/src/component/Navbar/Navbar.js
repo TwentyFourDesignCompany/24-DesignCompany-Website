@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { NavLink, useHistory } from "react-router-dom";
-import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { NavLink, useHistory, Link } from "react-router-dom";
+import { FaBars, FaTimes, FaApple, FaAndroid, FaGlobe, FaClone, FaLayerGroup } from "react-icons/fa";
+import { RiFlutterFill, RiSettings3Fill, RiComputerFill } from "react-icons/ri";
+import { AiOutlineFileSearch } from "react-icons/ai";
 
-import Logo from "../../assets/images/24 Design Company.png";
-import Logo1 from "../../assets/images/24 Design Company_RGB-02.png";
-// ICONS
-import Icon1 from "../../assets/icons/Icon1.svg";
-import Icon2 from "../../assets/icons/Icon2.svg";
-import Icon3 from "../../assets/icons/Icon3.svg";
-import Icon4 from "../../assets/icons/Icon4.svg";
-import Icon5 from "../../assets/icons/Icon5.svg";
-import Icon6 from "../../assets/icons/Icon6.svg";
+
+
+import Logo from "../../assets/images/newLogoWhite.png";
+import Logo1 from "../../assets/images/newLogoDark.png";
+
 
 function Navbar() {
   const history = useHistory();
@@ -52,7 +49,7 @@ function Navbar() {
   };
 
   useEffect(() => {
-    if (routeName === "/") {
+    if (routeName === "/" ) {
       setNavColor(false);
     } else {
       setNavColor(true);
@@ -83,7 +80,8 @@ function Navbar() {
         <img
           src={
             (routeName === "/about" ||
-              routeName == "/project-development" ||
+              routeName === "/project-development" ||
+              routeName === "/contact" ||
               routeName === "/web-development" ||
               routeName === "/mobile-development" ||
               routeName === "/ui-development" ||
@@ -94,7 +92,7 @@ function Navbar() {
               : Logo
           }
           alt="24  Design Logo"
-          className="w-40 h-20"
+          className="w-40 h-15"
         />
       </NavLink>
       <div className="menu-icon" onClick={handleClick}>
@@ -116,6 +114,19 @@ function Navbar() {
             About
           </NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink
+            exact
+            className={
+              navColor === true ? "nav-links nav-links-change" : "nav-links"
+            }
+            // className="nav-links"
+            to="/"
+            onClick={closeMobileMenu}
+          >
+            Portfolio
+          </NavLink>
+        </li>
         <li className="nav-item dropdown-cont">
           <div
             className={
@@ -127,172 +138,118 @@ function Navbar() {
           >
             Services
           </div>
-          <div className="drop-menu absolute min-w-full  mt-24 grid lg:grid-cols-3 ">
+          <div className="drop-menu fixed z-50 w-max mx-auto shadow-lg mt-24 grid lg:grid-cols-3">
             {/* Single content */}
-            <div className="single-nav ">
-              <NavLink
-                to="/project-development"
-                className="single-sublink flex flex-row"
-                onClick={closeMobileMenu}
-              >
-                <div className="mr-5 block  single-services-icon-cont">
-                  <img
-                    src={Icon1}
-                    alt="Icon"
-                    className=" single-services-icon block lg:w-40 lg:h-10  "
-                  />
+            <div>
+              <h1 className="text-left text-xl mb-5 font-bold">Mobile development</h1>
+              <Link to='/mobile-development'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <FaApple fontSize={25} color="blue"/>
+                <div className="ml-2">
+                  <h4>IOS app development</h4>
+                  <h5 className="text-gray-400">Native Swift apps for all Apple devices</h5>
                 </div>
-                <div>
-                  <h6 className="font-semibold text-sm lg:text-base sub-links text-left   text-primary-main">
-                    Product Development Service
-                  </h6>
-                  <h6 className="font-light text-xs sub-links text-left mt-3 w-full sub-link-text  text-primary-main">
-                    End-to-End Product Development Services to help you stay
-                    competitive in the market.24 Design Company, we understand
-                    that a solid grasp of your business sector and excellent
-                    development approach is equally critical in our development
-                    process.
-                  </h6>
+              </div>
+              </Link>
+              <Link to='/mobile-development'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <FaAndroid fontSize={25} color="blue"/>
+                <div className="ml-2">
+                  <h4>Android app development</h4>
+                  <h5 className="text-gray-400">Build native apps for Android with Kotlin</h5>
                 </div>
-              </NavLink>
+              </div>
+              </Link>
+              <Link to='/mobile-development'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <RiFlutterFill fontSize={25} color="blue"/>
+                <div className="ml-2">
+                  <h4>Flutter app development</h4>
+                  <h5 className="text-gray-400">Dart-based cross-platform development</h5>
+                </div>
+              </div>
+              </Link>
             </div>
-            {/* Single content */}
-            <div className="single-nav ">
-              <NavLink
-                to="/web-development"
-                className="single-sublink flex flex-row"
-                onClick={closeMobileMenu}
-              >
-                <div className="mr-5 block  single-services-icon-cont">
-                  <img
-                    src={Icon2}
-                    alt="Icon"
-                    className=" single-services-icon block lg:w-40 lg:h-10 w-7 h-10"
-                  />
+               
+            <div>
+              <h1 className="text-left text-xl mb-5 font-bold">Web development</h1>
+              <Link to='/web-development'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <FaGlobe fontSize={25} color="orange"/>
+                <div className="ml-2">
+                  <h4>Web app development</h4>
+                  <h5 className="text-gray-400">Secure and performant web apps PWAs</h5>
                 </div>
-                <div>
-                  <h6 className="font-semibold text-sm lg:text-base sub-links text-left   text-primary-main">
-                    Web Application Development
-                  </h6>
-                  <h6 className="font-light text-xs sub-links text-left mt-3 w-full sub-link-text  text-primary-main">
-                    Our web applications are marked by a robust, scalable
-                    architecture that supports high performance requirements and
-                    ease of management without compromising security.
-                  </h6>
+              </div>
+              </Link>
+              <Link to='/web-development'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <RiSettings3Fill fontSize={25} color="orange"/>
+                <div className="ml-2">
+                  <h4>DevOps services</h4>
+                  <h5 className="text-gray-400">Solution architecture & cloud dev services</h5>
                 </div>
-              </NavLink>
+              </div>
+              </Link>
+              <Link to='/web-development'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <RiComputerFill fontSize={25} color="orange"/>
+                <div className="ml-2">
+                  <h4>Legacy soft modernization</h4>
+                  <h5 className="text-gray-400">Reengineering, redesign, and migration</h5>
+                </div>
+              </div>
+              </Link>
             </div>
-            {/* Single content */}
-            <div className="single-nav">
-              <NavLink
-                to="/mobile-development"
-                className="single-sublink flex flex-row"
-                onClick={closeMobileMenu}
-              >
-                <div className="mr-5 block  single-services-icon-cont">
-                  <img
-                    src={Icon3}
-                    alt="Icon"
-                    className=" single-services-icon block lg:w-40 lg:h-10 w-10 h-10"
-                  />
+
+            <div>
+              <h1 className="text-left text-xl mb-5 font-bold">For Startups</h1>
+             <Link to='/digital-transformation'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <AiOutlineFileSearch fontSize={25} color="#21e6c1"/>
+                <div className="ml-2">
+                  <h4>Discovery phase</h4>
+                  <h5 className="text-gray-400">SRS, UX prototype, SWOT analysis</h5>
                 </div>
-                <div>
-                  <h6 className="font-semibold text-sm lg:text-base sub-links text-left   text-primary-main">
-                    Mobile Development Service
-                  </h6>
-                  <h6 className="font-light text-xs sub-links text-left mt-3 w-full sub-link-text text-primary-main">
-                    We develop powerful applications that provide a thrilling
-                    experience for your users and bring tangible value to your
-                    business. Whether native, hybrid or cross platform, our
-                    mobile development team delivers solutions that run
-                    seamlessly on all major operating systems and all major
-                    mobile devices
-                  </h6>
+              </div>
+              </Link>
+              <Link to='/digital-transformation'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <FaLayerGroup fontSize={25} color="#21e6c1"/>
+                <div className="ml-2">
+                  <h4>MVP development</h4>
+                  <h5 className="text-gray-400">Reducing time-to-market with MVP</h5>
                 </div>
-              </NavLink>
+              </div>
+              </Link>
+              <Link to='/digital-transformation'>
+              <div className="flex items-center text-sm text-left mb-5">
+                <FaClone fontSize={25} color="#21e6c1"/>
+                <div className="ml-2">
+                  <h4>CTO as a Service</h4>
+                  <h5 className="text-gray-400">CaaS consulting services for startups</h5>
+                </div>
+              </div>
+              </Link>
             </div>
-            {/* Single content */}
-            <div className="single-nav">
-              <NavLink
-                to="/ui-development"
-                className="single-sublink flex flex-row"
-                onClick={closeMobileMenu}
-              >
-                <div className="mr-5 block  single-services-icon-cont">
-                  <img
-                    src={Icon4}
-                    alt="Icon"
-                    className=" single-services-icon block lg:w-40 lg:h-10"
-                  />
-                </div>
-                <div>
-                  <h6 className="font-semibold text-sm lg:text-base sub-links text-left   text-primary-main">
-                    UI/UX
-                  </h6>
-                  <h6 className="font-light text-xs sub-links text-left mt-3 w-full sub-link-text text-primary-main">
-                    User experience and user interface design for all types of
-                    websites, SaaS, and web/mobile apps. We combine the latest
-                    UI/UX trends with our customers’ individual goals and needs
-                    to deliver intuitive, vibrant, and impactful designs that
-                    power up businesses.
-                  </h6>
-                </div>
-              </NavLink>
-            </div>
-            {/* Single content */}
-            <div className="single-nav">
-              <NavLink
-                to="/digital-transformation"
-                className="single-sublink flex flex-row"
-                onClick={closeMobileMenu}
-              >
-                <div className="mr-5 block  single-services-icon-cont">
-                  <img
-                    src={Icon5}
-                    alt="Icon"
-                    className=" single-services-icon block lg:w-40 lg:h-10"
-                  />
-                </div>
-                <div>
-                  <h6 className="font-semibold text-sm lg:text-base sub-links text-left   text-primary-main">
-                    Digital Transformation
-                  </h6>
-                  <h6 className="font-light text-xs sub-links text-left mt-3 w-full sub-link-text text-primary-main">
-                    Custom web applications designed to meet specific business
-                    challenges
-                  </h6>
-                </div>
-              </NavLink>
-            </div>
-            {/* Single content */}
-            <div className="single-nav">
-              <NavLink
-                to="/QA-testing"
-                className="single-sublink flex flex-row"
-                onClick={closeMobileMenu}
-              >
-                <div className="mr-5 block  single-services-icon-cont">
-                  <img
-                    src={Icon6}
-                    alt="Icon"
-                    className=" single-services-icon block lg:w-40 lg:h-10"
-                  />
-                </div>
-                <div>
-                  <h6 className="font-semibold text-sm lg:text-base sub-links text-left   text-primary-main">
-                    QA & Testing
-                  </h6>
-                  <h6 className="font-light text-xs sub-links text-left mt-3 w-full sub-link-text text-primary-main">
-                    Rigorous testing and Quality assurance help us deliver top
-                    notch digital products, everytime. 24 Design Company’s QA
-                    team of experts is there to guarantee you don't lose
-                    precious time and money fixing issues that can be spotted
-                    early and deliver a smooth, bug-free experience to your
-                    users on all screen
-                  </h6>
-                </div>
-              </NavLink>
-            </div>
+<Link to='/QA-testing'>
+<div className="text-left">
+  <h2 className="text-xl font-bold">Software testing</h2>
+  <h3 className="text-gray-400">Manual testing & Automation testing</h3>
+</div>
+</Link>
+<Link to='/project-development'>
+<div className="text-left">
+  <h2 className="text-xl font-bold">Dedicated team</h2>
+  <h3 className="text-gray-400">Experienced tech staff to extend a team</h3>
+</div>
+</Link>
+<Link to='/ui-development'>
+<div className="text-left">
+  <h2 className="text-xl font-bold">UI-UX design</h2>
+  <h3 className="text-gray-400">Material and HIG design for all platforms</h3>
+</div>
+</Link>
           </div>
         </li>
         <li className="nav-item">
@@ -322,7 +279,7 @@ function Navbar() {
             Blog
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item contactBtn">
           <NavLink
             exact
             className={
@@ -332,7 +289,7 @@ function Navbar() {
             to="/contact"
             onClick={closeMobileMenu}
           >
-            Contact us
+            <span className="contact">Contact us</span>
           </NavLink>
         </li>
       </ul>

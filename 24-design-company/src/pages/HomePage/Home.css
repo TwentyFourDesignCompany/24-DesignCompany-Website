@@ -1,3 +1,25 @@
+.slick-slide {
+  height: 200px !important;
+}
+
+.slick-slide img {
+  height: 200px !important;
+  width: 300px !important;
+}
+.our_work_cards__wrapper{
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  padding-bottom: 14em;
+
+}
+.paragraph{
+  width: 50%;
+}
 .main-wrapper {
   /* background-image: url("../../assets/images/bg-left.png"); */
   background-repeat: no-repeat;
@@ -245,6 +267,9 @@ margin-left: -2rem;
   }
 }
 @media screen and (max-width: 640px) {
+  .paragraph{
+    width: 100% !important;
+  }
   .main-text {
     font-size: 45px;
     font-style: normal;
@@ -274,6 +299,9 @@ margin-left: -2rem;
   }
 }
 @media screen and (max-width: 450px) {
+  .our_work_cards__wrapper{
+    flex-direction: column;
+  }
   .sub-main-text1,
   .sub-main-text2 {
     font-size: 13px;

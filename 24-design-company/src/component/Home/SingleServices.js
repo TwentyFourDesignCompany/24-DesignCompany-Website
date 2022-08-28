@@ -11,8 +11,7 @@ const SingleServices = (props) => {
         {props.title}
       </h6>
       <p className="text-center sm:text-sm text-sm font-normal services-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        {props.text}
       </p>
     </MaainCont>
   );

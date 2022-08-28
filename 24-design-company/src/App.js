@@ -19,6 +19,11 @@ import UIDevelopment from "./pages/UI-UXPage/UI-UXPage";
 import WebDevPage from "./pages/WebDevelopmentPage/WebDevPage";
 import CareersPage from "./pages/CareersPage/CareersPage";
 import BlogPage from "./pages/BlogPage/BlogPage";
+import Contact from "./pages/Contact/Contact";
+import Portfolio from "./pages/Portfolio";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import WorkDetails from "./pages/WorkDetails/WorkDetails";
 
 function App() {
   AOS.init({
@@ -32,6 +37,7 @@ function App() {
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={HomePage} />
           <Route path="/about" component={AboutPage} />
+          <Route path="/contact" component={Contact} />
           <Route path="/project-development" component={ProjectDevelopment} />
           <Route path="/web-development" component={WebDevPage} />
           <Route path="/careers" component={CareersPage} />
@@ -39,6 +45,10 @@ function App() {
           <Route path="/mobile-development" component={MobileDevelopment} />
           <Route path="/ui-development" component={UIDevelopment} />
           <Route path="/QA-testing" component={QAPage} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/terms" component={Terms} />
+          <Route path="/privacy" component={Privacy} />
+          <Route path="/:slug" component={WorkDetails} />
           <Route
             path="/digital-transformation"
             component={DigitalTransformation}

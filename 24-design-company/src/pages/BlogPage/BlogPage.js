@@ -46,30 +46,13 @@ const BlogPage = () => {
             </NavLink>
           </div>
           <div className="w-full h-full ">
-            <SingleTrending />
-            <SingleTrending />
-            <SingleTrending />
+            <SingleTrending title='Why You Should Invest in a New Website.' desc='Fresh new marketing initiatives and new targets for sales have likely been discussed, but what about making ‘digital’ a real focus for your business?
+'/>
+<SingleTrending title='The Real Scam of ‘Influencer’.' desc='There are tens of thousands of humans spending their days trying to be popular on Instagram, buying outfits, wearing hats and seeking their version of cute. People from all backgrounds and genders, hoping to be the next Kardashian.
+'/>
           </div>
         </section>
-        <section className="container w-full relative pt-0 pb-5 md:pb-20  lg:pl-28 blog-sub-cont md:pl-12 pl-6 lg:pr-28 md:pr-12 pr-6">
-          {/* SERVICES HEADER */}
-          <div className="w-full flex justify-between align-middle  pb-14">
-            <h6 className="font-semibold lg:text-2xl know-text md:text-2xl text-base  text-primary-main">
-              Exclusive Projects
-            </h6>
-            <NavLink to="#">
-              <h6 className=" font-medium see-text flex flex-row flex-header text-secodary-main lg:text-sm text-xs  md:text-xs sm:mt-0 mt-1">
-                Read all
-                <FaAngleDoubleRight className="ml-1 " />
-              </h6>
-            </NavLink>
-          </div>
-          <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 gap-5">
-            <SingleBlog />
-            <SingleBlog />
-            <SingleBlog />
-          </div>
-        </section>
+        
       </motion.div>
     </>
   );
