@@ -1,13 +1,33 @@
+.slick-slide {
+  height: 200px !important;
+}
 
+.slick-slide img {
+  height: 200px !important;
+  width: 300px !important;
+}
+.our_work_cards__wrapper{
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  padding-bottom: 14em;
 
+}
+.paragraph{
+  width: 50%;
+}
 .main-wrapper {
-  background-image: url("../../assets/images/bg.png");
+  /* background-image: url("../../assets/images/bg-left.png"); */
   background-repeat: no-repeat;
-
-  background-position: fixed;
-  /* min-height: 98vh; */
+  background-color: #0b1930;
+  /* background-position: right; */
+  min-height: 100vh;
   /* min-height: 69vh; */
-  max-width: 100vw;
+  width: 100%;
 }
 .main-text {
   color: white;
@@ -18,25 +38,7 @@
   /* line-height: 80px; */
   letter-spacing: 0em;
   text-align: left;
-  width: 38%;
-}
-.sub-main-text1 {
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 300;
-  /* line-height: 33px; */
-  letter-spacing: 0em;
-  text-align: left;
-  color: white;
-  margin-top: 0.5rem;
-}
-.sub-main-text2 {
-  font-size: 22px;
-  /* line-height: 26px; */
-  font-weight: 600;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #00a7ff;
+  width: 90%;
 }
 .sub-main-text3 {
   color: white;
@@ -46,23 +48,33 @@
   /* line-height: 23px; */
   letter-spacing: 0em;
   text-align: left;
-  width: 50%;
+  width: 95%;
   margin-top: 2rem;
 }
 .home-btn {
   display: block;
-  width: 250px;
+  width: 200px;
   height: 50px;
   outline: none !important;
   cursor: pointer !important;
   color: #fff;
   border-radius: 6px !important;
-  border: 1px solid #01a1f7 !important;
+  border: 1px solid #2f58ff !important;
   margin-top: 3rem;
   justify-content: center !important;
   align-items: center !important;
   transition: all 0.3s ease-in-out;
-  background-color: #01a1f7;
+  background-color: #2f58ff;
+}
+.col2{
+  align-self: flex-end;
+  justify-content: flex-end
+}
+.home-side-img-cont {
+  width: 500px;
+  height: 500px;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
 .home-btn:focus {
   outline: none !important;
@@ -81,6 +93,34 @@
   color: #01a1f7 !important;
   transform: translateY(-12px);
 }
+.other-service-btn {
+  align-self: center;
+  align-items: center !important;
+  justify-content: center;
+}
+.home-slider-cont {
+  align-items: center !important;
+  justify-content: center;
+}
+.slider-cont {
+  width: 100%;
+  height: 740px;
+  background-image: url("../../assets/images/frame-slider 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.caro-slider {
+  width: 100%;
+  align-self: center;
+  height: 200px;
+  /* padding-top: 30px; */
+}
+.text3 {
+  color: #4f4f4f;
+}
+.text2 {
+  color: #1d1d1f;
+}
 /* .home-icon {
   font-size: 2rem !important;
 } */
@@ -97,17 +137,17 @@
 }
 .bulb-img-cont {
   height: 19rem !important;
-  width: 50%;
+  width: 80%;
 }
 .sub-main-cont-text {
   color: #0c1737;
-  font-size: 43px;
+  font-size: 38px;
 }
 .sub-main-cont-text1 {
   color: #0c1737;
-  font-size: 23px;
+  font-size: 20px;
   width: 90%;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 /* HOEVER VIEW */
@@ -133,6 +173,9 @@
   justify-content: center !important;
   align-items: center !important;
 }
+.passion-btn:focus {
+  outline: none !important;
+}
 .clients-view {
   background-color: #f4f6ff;
 }
@@ -144,9 +187,8 @@
   background-size: contain;
   background-color: #f4f6ff;
   min-height: 60vh;
-  
 }
-.phone-padding-view{
+.phone-padding-view {
   background-color: #f4f6ff;
 }
 
@@ -175,12 +217,25 @@
   /* .sub-main-cont-1{
 margin-left: -2rem;
 } */
-  .sub-main-cont-text {
-    font-size: 38px;
+  .home-side-img-cont {
+    width: 400px;
+    height: 400px;
   }
-  /* .sub-main-cont-text1 {
-    font-size: 20px;
-  } */
+
+  .sub-main-cont-text {
+    font-size: 28px;
+  }
+  .sub-main-cont-text1 {
+    font-size: 17px;
+    width: 95%;
+  }
+  .bulb-img-cont {
+    height: 19rem !important;
+    width: 100%;
+  }
+  .main-text {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -189,13 +244,20 @@ margin-left: -2rem;
     font-style: normal;
     width: 70%;
   }
+  .home-side-img-cont {
+    display: none;
+  }
+  .slider-cont {
+    width: 100%;
+    height: 700px;
+  }
   .sub-main-text3 {
     width: 80%;
   }
-  /* .sub-main-cont-text {
+  .sub-main-cont-text {
     color: #0c1737;
-    font-size: 35px;
-  } */
+    font-size: 32px;
+  }
   .bulb-img-cont {
     width: 0%;
   }
@@ -205,6 +267,9 @@ margin-left: -2rem;
   }
 }
 @media screen and (max-width: 640px) {
+  .paragraph{
+    width: 100% !important;
+  }
   .main-text {
     font-size: 45px;
     font-style: normal;
@@ -225,15 +290,18 @@ margin-left: -2rem;
     padding-top: 3rem;
   }
   .sub-main-cont-text {
-    font-size: 24px;
+    font-size: 18px !important;
   }
   .sub-main-cont-text1 {
-    font-size: 18px;
+    font-size: 13px !important;
     width: 100%;
     margin-top: 15px;
   }
 }
 @media screen and (max-width: 450px) {
+  .our_work_cards__wrapper{
+    flex-direction: column;
+  }
   .sub-main-text1,
   .sub-main-text2 {
     font-size: 13px;
@@ -244,10 +312,10 @@ margin-left: -2rem;
     padding-top: 3rem;
   }
   .sub-main-cont-text {
-    font-size: 21px;
+    font-size: 15px !important;
   }
   .sub-main-cont-text1 {
-    font-size: 15px;
+    font-size: 11px !important;
     width: 100%;
     margin-top: 15px;
   }
@@ -279,10 +347,10 @@ margin-left: -2rem;
     width: 90%;
   }
   .sub-main-cont-text {
-    font-size: 16px;
+    font-size: 12px !important;
   }
   .sub-main-cont-text1 {
-    font-size: 13px;
+    font-size: 10px !important;
     width: 100%;
     margin-top: 15px;
   }
@@ -296,13 +364,13 @@ margin-left: -2rem;
     font-size: 9px !important;
   }
   .phone-text-cont {
-    padding-top: 6.2rem !important;
+    padding-top: 6.4rem !important;
     padding-left: 2rem !important;
   }
 }
 @media screen and (max-width: 330px) {
   .phone-big-text {
-    font-size: 25px !important;
+    font-size: 20px !important;
     margin-top: -5px !important;
   }
   .phone-text-cont {

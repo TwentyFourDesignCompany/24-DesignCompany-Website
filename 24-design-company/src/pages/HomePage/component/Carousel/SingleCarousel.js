@@ -1,13 +1,14 @@
 import React from "react";
 import "./SingleCarousel.css";
-import Image from "../../../../assets/images/caro4.png";
+import styled from "styled-components";
 
 const SingleCarousel = (props) => {
   return (
-    <div className="mx-5">
-      <img src={props.image} alt="24 Design" className="block " />
+    <div className="mr-10 carouselItem">
+      <img src={props.image} alt="24 Design" className="w-full h-full block" />
     </div>
   );
 };
 
 export default SingleCarousel;
+

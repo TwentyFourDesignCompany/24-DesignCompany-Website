@@ -8,6 +8,8 @@ import Image4 from "../../assets/images/target.png";
 import Image5 from "../../assets/images/Layer 2.png";
 import SingleTeam from "./SingleTeam/SingleTeam";
 import AbosoluteAbout from "../../assets/images/fade-about.png";
+import { Helmet } from "react-helmet";
+import { NavLink } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -18,6 +20,13 @@ const AboutPage = () => {
       transition={{ duration: 0.5 }}
       className="container main-home-container relative"
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          About Us | 24 Design Company | Connecting Business and Technology
+        </title>
+        <link rel="canonical" href="https://24group.com.ng/about" />
+      </Helmet>
       <section className=" container  min-w-full pt-20  lg:pb-10 pb-10  lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12 pr-6">
         <div className="w-full h-full about-wrapper  lg:pt-32 md:pt-24 pt-24">
           <div className="about-text-cont w-full relative h-full lg:mt-60 mt-96">
@@ -40,20 +49,99 @@ const AboutPage = () => {
       </section>
       <section className="container min-w-full lg:pt-20 pt-10 pb-20  lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12 pr-6">
         <div className="min-w-full grid lg:grid-cols-2 ">
-          <p className="text-primary-main font-medium text-4xl lg:mb-0 mb-5 sm:text-left ">
-            Our Company
+          <p className="text-primary-main font-semibold text-4xl lg:mb-0 mb-5 sm:text-left ">
+            Our Mission
           </p>
           <div>
             <p className="text-primary-main font-normal sm:text-lg text-base mb-3">
-              We are a global IT company providing strategic IT business
-              solutions andservices for complex business problems, in multiple
-              industry sectors includingretail, healthcare, finance, education,
-              and more.
+              Our mission is to enable progressive businesses and ideas to
+              transform, scale and gain competitive advantage, through the
+              expert delivery of innovative, tailor-made software solutions. Our
+              solutions help organizations and people around the world to
+              perform more effectively and achieve better outcomes.
+            </p>
+            {/* <p className="text-primary-main font-normal sm:text-lg text-base mb-3">
+              Our vast technology and Industry expertise enable us to focus on
+              cutting-edge Internet technologieswith the aim to develop
+              scalable, secure and easy-to-use web applications that work across
+              multiple devices.
+            </p> */}
+            {/* <p className="text-primary-main font-normal sm:text-lg text-base">
+              We believe that the judicious use oftechnology, together with a
+              good design can reduce complexity, connectindividuals, and provide
+              valuable insights, all of which ultimately help businesses succeed
+            </p> */}
+          </div>
+        </div>
+        {/* WHAT WE DO */}
+        <div className="min-w-full grid lg:grid-cols-2 mt-20">
+          <p className="text-primary-main font-semibold text-4xl lg:mb-0 mb-5 sm:text-left ">
+            What We Do
+          </p>
+          <div>
+            <p className="text-primary-main font-normal sm:text-lg text-base mb-3">
+              At 24 Design Company, we pride ourselves on delivering innovative,
+              digital experiences that make an impact. Since 2008, we’ve proudly
+              partnered with start-ups, SMEs, large corporate companies and
+              everyone in between to unlock value through creativity,
+              technology, and business-minded thinking.
+            </p>
+            {/* <p className="text-primary-main font-normal sm:text-lg text-base mb-3">
+              Our vast technology and Industry expertise enable us to focus on
+              cutting-edge Internet technologieswith the aim to develop
+              scalable, secure and easy-to-use web applications that work across
+              multiple devices.
+            </p> */}
+            {/* <p className="text-primary-main font-normal sm:text-lg text-base">
+              We believe that the judicious use oftechnology, together with a
+              good design can reduce complexity, connectindividuals, and provide
+              valuable insights, all of which ultimately help businesses succeed
+            </p> */}
+          </div>
+        </div>
+        {/* WHAT WE DO */}
+        <div className="min-w-full grid lg:grid-cols-2 mt-20">
+          <p className="text-primary-main font-semibold text-4xl lg:mb-0 mb-5 sm:text-left ">
+            What We Believe
+          </p>
+          <div>
+            <p className="text-primary-main font-normal sm:text-lg text-base mb-3">
+              We believe that creating memorable experiences is the best way to
+              connect with your customers. From dynamic web designs to
+              cutting-edge digital marketing strategies, we believe that the
+              custom solutions we create today will transcend the trends of
+              tomorrow. No matter your product or service, you have a story to
+              tell. And, we’re the best agency to tell it.
+            </p>
+            {/* <p className="text-primary-main font-normal sm:text-lg text-base mb-3">
+              Our vast technology and Industry expertise enable us to focus on
+              cutting-edge Internet technologieswith the aim to develop
+              scalable, secure and easy-to-use web applications that work across
+              multiple devices.
+            </p> */}
+            {/* <p className="text-primary-main font-normal sm:text-lg text-base">
+              We believe that the judicious use oftechnology, together with a
+              good design can reduce complexity, connectindividuals, and provide
+              valuable insights, all of which ultimately help businesses succeed
+            </p> */}
+          </div>
+        </div>
+        {/* WHAT WE DO */}
+        <div className="min-w-full grid lg:grid-cols-2 mt-20">
+          <p className="text-primary-main font-semibold text-4xl lg:mb-0 mb-5 sm:text-left ">
+            Who We Are
+          </p>
+          <div>
+            <p className="text-primary-main font-normal sm:text-lg text-base mb-3">
+              We are an innovative, reliable and curious company providing
+              strategic IT business solutions and services for complex and
+              simple business problems, in multiple industry sectors including
+              retail, healthcare, finance, education, and more.
             </p>
             <p className="text-primary-main font-normal sm:text-lg text-base mb-3">
-              Our vast technology andindustry expertise enable us to focus on
+              Our vast technology and Industry expertise enable us to focus on
               cutting-edge Internet technologieswith the aim to develop
-              scalable, secure and easy-to-use web applicationsthat work across
+              scalable, secure and easy-to-use web applications that work across
               multiple devices.
             </p>
             <p className="text-primary-main font-normal sm:text-lg text-base">
@@ -137,7 +225,7 @@ const AboutPage = () => {
         </div>
       </section>
       {/* TEAM */}
-      <section className="container team min-w-full lg:pt-20 pt-14 pb-20  lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12 pr-6">
+      {/* <section className="container team min-w-full lg:pt-20 pt-14 pb-20  lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12 pr-6">
         <h6 className="font-bold text-primary-main text-4xl  md:mb-20 mb-16">
           Meet our team
         </h6>
@@ -150,7 +238,7 @@ const AboutPage = () => {
         <button className="service-btn text-btn animate-bounce outline-none w-40 h-9 block mt-12 mx-auto border rounded-3xl border-primary-main">
           Know more
         </button>
-      </section>
+      </section> */}
       <section className="container digital min-w-full lg:pt-20 pt-14 pb-20  lg:pl-28 md:pl-12 pl-6 lg:pr-28 md:pr-12 pr-6">
         <div className="min-w-full grid lg:grid-cols-2  lg:mt-14  mt-5">
           {/* COnt 1 */}
@@ -165,9 +253,12 @@ const AboutPage = () => {
               We’re always on the lookout for talented, ambitious team members.
               Get in touch to discuss opportunities.
             </p>
-            <button className="passion-btn flex animate-bounce outline-none w-40 h-9  mt-12 border rounded-3xl border-primary-main bg-primary-main ">
+            <NavLink
+              to="/careers"
+              className="passion-btn flex animate-bounce outline-none w-40 h-9  mt-12 border rounded-3xl border-primary-main bg-primary-main "
+            >
               Apply
-            </button>
+            </NavLink>
           </div>
           <div className=" lg:block hidden">
             <img src={Image5} alt="24 Design Company" className="block" />

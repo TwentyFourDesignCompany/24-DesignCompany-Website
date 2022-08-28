@@ -6,6 +6,7 @@ import { careerData, jobs } from "../../data";
 import SingleJob from "./component/SingleJob/SingleJob";
 import { NavLink } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const CareersPage = () => {
   const careerView = careerData.map((item) => (
@@ -22,6 +23,11 @@ const CareersPage = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Careers | 24 Design Company | Careers Opportunities</title>
+        <link rel="canonical" href="https://24group.com.ng/careers" />
+      </Helmet>
       <section className="container relative pt-20 pb-5  lg:pl-28 careers-wrapper md:pl-12 pl-6">
         <div className="w-full h-full justify-center items-center lg:pt-32 md:pt-24 pt-24 ">
           <h6 className="career-main-text lg:w-4/6 font-medium lg:text-6xl md:text-6xl   mb-5">
@@ -59,9 +65,9 @@ const CareersPage = () => {
                 people in the industry, goon annual picnics outside the country
                 and enjoy many other benefits by working with us.
               </p>
-              <button className="passion-btn flex animate-bounce outline-none w-40 h-9  mt-12 border rounded-3xl border-secodary-main bg-secodary-main ">
+              <NavLink to='#' className="passion-btn flex animate-bounce outline-none w-40 h-9  mt-12 border rounded-3xl border-secodary-main bg-secodary-main ">
                 Apply
-              </button>
+              </NavLink>
             </div>
             {/* COLS2 */}
             <div className=" grid lg:grid-cols-2 mt-8 gap-0">{careerView}</div>
@@ -101,7 +107,7 @@ const CareersPage = () => {
               <input
                 type="text"
                 name="comment"
-                multiple="true"
+                multiple={true}
                 placeholder="Comments:"
                 className="single-input"
               />

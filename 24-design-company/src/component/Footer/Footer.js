@@ -58,7 +58,8 @@ const Footer = () => {
             {/* SINGLE ICON */}
             <NavLink
               className="mr-14 single-icon footer-icon animate-pulse"
-              to="#"
+              to="https://twitter.com/24DesignCompany"
+              target="_blank"
             >
               <FaTwitter className="home-icon" />
             </NavLink>
@@ -100,11 +101,7 @@ const Footer = () => {
       <div className="single-footer min-w-full mb-5">
         <div className=" footer-divider lg:w-2/5 w-full  t"></div>
         <div className="mx-auto">
-          <NavLink
-            exact
-            className="nav-links footer-links text-center"
-            to="/services"
-          >
+          <NavLink exact className="nav-links footer-links text-center" to="#">
             Services
           </NavLink>
         </div>
